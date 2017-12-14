@@ -1,0 +1,16 @@
+{
+  "name": "bootstrap-social",
+  "version": "6.0.0",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/lipis/bootstrap-social.git"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "bootstrap": "4.0.0-beta",
+    "font-awesome": "^4.7.0"
+  },
+  "devDependencies": {
+    "node-sass": "^4.6.0"
+  }
+}

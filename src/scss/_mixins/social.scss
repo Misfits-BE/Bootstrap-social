@@ -1,0 +1,7 @@
+@mixin btn-social($color-bg, $color: null) {
+  @if $color {
+    color: $color;
+  }
+
+  @include button-variant($color-bg, $color-bg);
+}

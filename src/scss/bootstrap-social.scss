@@ -1,0 +1,18 @@
+///
+/// Social icons Buttsons for Bootstrap
+///
+/// Copyright 2013-2016 Panayiotis Lipiridis
+/// Licensed under the MIT License
+///
+/// https://github.com/lipis/bootstrap-social
+///
+
+// Bootstrap
+@import '../../node_modules/bootstrap/scss/_functions';
+@import '../../node_modules/bootstrap/scss/_mixins';
+@import '../../node_modules/bootstrap/scss/_variables';
+
+// Bootstrap social support for bootstrap 4.x
+@import '_partials/variables';
+@import '_mixins/social';
+@import '_partials/custom';

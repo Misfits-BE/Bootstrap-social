@@ -1,0 +1,28 @@
+///
+/// Social Buttons for Bootstrap
+///
+/// Copyright 2013-2016 Panayiotis Lipiridis
+/// Licensed under the MIT License
+///
+/// https://github.com/lipis/bootstrap-social
+///
+
+// Bootstrap-social support for Bootstrap 4.x
+$btn-padding-y: 0.5rem;
+$btn-padding-y-lg: 0.75rem;
+$btn-padding-y-sm: 0.25rem;
+
+$btn-line-height: 1.25;
+
+$btn-padding-x: 1rem;
+$btn-padding-x-lg: 1.5rem;
+$btn-padding-x-sm: 0.5rem;
+
+$padding-base-horizontal: $btn-padding-y;
+$padding-large-horizontal: $btn-padding-y-lg;
+$padding-small-horizontal: $btn-padding-y-sm;
+
+$bs-height-base: floor($btn-line-height + $btn-padding-x * 2);
+$bs-height-lg: floor($btn-line-height + $btn-padding-x-lg * 2);
+$bs-height-sm: floor($btn-line-height + $btn-padding-x-sm * 2);
+$bs-height-xs: floor($btn-line-height + $btn-padding-x-sm * 2);
