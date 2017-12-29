@@ -50,6 +50,7 @@
 }
 
 .btn-social {
+  // scss-lint:disable ImportantRule
   > :first-child {
     line-height: $btn-line-height !important;
     padding-top: $btn-padding-y !important;
@@ -57,76 +58,158 @@
     font-size: inherit !important;
   }
 
+  // scss-lint:disable ImportantRule
   &.btn-lg {
     > :first-child {
-      line-height: $btn-line-height !important;
-      padding-top: $btn-padding-y-lg !important;
-      padding-bottom: $btn-padding-y-lg !important;
       font-size: inherit !important;
+      line-height: $btn-line-height !important;
+      padding-bottom: $btn-padding-y-lg !important;
+      padding-top: $btn-padding-y-lg !important;
     }
   }
 }
 
+// scss-lint:disable PlaceholderInExtend
 .btn-social-icon {
   @extend .btn-social;
 
   height: $bs-height-base;
-  width: $bs-height-base;
   padding: 0;
+  width: $bs-height-base;
 
+  // scss-lint:disable ImportantRule
   > :first-child {
-    border: none;
+    border: 0;
     text-align: center;
     width: 100% !important;
   }
 
   &.btn-lg {
     height: $bs-height-lg;
-    width: $bs-height-lg;
     padding-left: 0;
     padding-right: 0;
+    width: $bs-height-lg;
   }
 
   &.btn-sm {
     height: $bs-height-sm;
-    width: $bs-height-sm;
     padding-left: 0;
     padding-right: 0;
+    width: $bs-height-sm;
   }
 
   &.btn-xs {
     height: $bs-height-xs;
-    width: $bs-height-xs;
     padding-left: 0;
     padding-right: 0;
+    width: $bs-height-xs;
   }
 }
 
-.btn-adn           { @include btn-social($color-adn); }
-.btn-bitbucket     { @include btn-social($color-bitbucket); }
-.btn-dropbox       { @include btn-social($color-dropbox); }
-.btn-facebook      { @include btn-social($color-facebook); }
-.btn-flickr        { @include btn-social($color-flickr); }
-.btn-foursquare    { @include btn-social($color-foursquare); }
-.btn-github        { @include btn-social($color-github); }
-.btn-google        { @include btn-social($color-google); }
-.btn-instagram     { @include btn-social($color-instagram); }
-.btn-linkedin      { @include btn-social($color-linkedin); }
-.btn-microsoft     { @include btn-social($color-microsoft); }
-.btn-odnoklassniki { @include btn-social($color-odnoklassniki); }
-.btn-openid        { @include btn-social($color-openid); }
-.btn-pinterest     { @include btn-social($color-pinterest); }
-.btn-reddit        { @include btn-social($color-reddit); }
-.btn-soundcloud    { @include btn-social($color-soundcloud); }
-.btn-tumblr        { @include btn-social($color-tumblr); }
-.btn-vimeo         { @include btn-social($color-vimeo); }
-.btn-vk            { @include btn-social($color-vk); }
-.btn-yahoo         { @include btn-social($color-yahoo); }
-.btn-stripe        { @include btn-social($color-stripe); }
-.btn-untappd       { @include btn-social($color-untappd); }
-.btn-gitlab        { @include btn-social($color-gitlab); }
+.btn-adn {
+  @include btn-social($color-adn);
+}
 
-.btn-whatsapp      { @include btn-social($color-whatsapp, $color-white); }
-.btn-twitter       { @include btn-social($color-twitter, $color-white); }
-.btn-amazon        { @include btn-social($color-amazon, $color-amazon-text); }
-.btn-patreon       { @include btn-social($color-patreon, $color-patreon-text); }
+.btn-bitbucket {
+  @include btn-social($color-bitbucket);
+}
+
+.btn-dropbox {
+  @include btn-social($color-dropbox);
+}
+
+.btn-facebook {
+  @include btn-social($color-facebook);
+}
+
+.btn-flickr {
+  @include btn-social($color-flickr);
+}
+
+.btn-foursquare {
+  @include btn-social($color-foursquare);
+}
+
+.btn-github {
+  @include btn-social($color-github);
+}
+
+.btn-google {
+  @include btn-social($color-google);
+}
+
+.btn-instagram {
+  @include btn-social($color-instagram);
+}
+
+.btn-linkedin {
+  @include btn-social($color-linkedin);
+}
+
+.btn-microsoft {
+  @include btn-social($color-microsoft);
+}
+
+.btn-odnoklassniki {
+  @include btn-social($color-odnoklassniki);
+}
+
+.btn-openid {
+  @include btn-social($color-openid);
+}
+
+.btn-pinterest {
+  @include btn-social($color-pinterest);
+}
+
+.btn-reddit {
+  @include btn-social($color-reddit);
+}
+
+.btn-soundcloud {
+  @include btn-social($color-soundcloud);
+}
+
+.btn-tumblr {
+  @include btn-social($color-tumblr);
+}
+
+.btn-vimeo {
+  @include btn-social($color-vimeo);
+}
+
+.btn-vk {
+  @include btn-social($color-vk);
+}
+
+.btn-yahoo {
+  @include btn-social($color-yahoo);
+}
+
+.btn-stripe {
+  @include btn-social($color-stripe);
+}
+
+.btn-untappd {
+  @include btn-social($color-untappd);
+}
+
+.btn-gitlab {
+  @include btn-social($color-gitlab);
+}
+
+.btn-whatsapp {
+  @include btn-social($color-whatsapp, $color-white);
+}
+
+.btn-twitter {
+  @include btn-social($color-twitter, $color-white);
+}
+
+.btn-amazon {
+  @include btn-social($color-amazon, $color-amazon-text);
+}
+
+.btn-patreon {
+  @include btn-social($color-patreon, $color-patreon-text);
+}
