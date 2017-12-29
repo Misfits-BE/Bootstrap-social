@@ -1,3 +1,5 @@
+@import '_partials/variables';
+
 body {
   font-weight: 300;
   -webkit-font-smoothing: antialiased;
@@ -31,13 +33,14 @@ h2 {
   margin-bottom: 15px;
   font-weight: 300;
   letter-spacing: -1px;
-  color: #fff;
+  color: $color-white;
 }
 
+// scss-lint:disable ImportantRule
 .jumbotron iframe {
   width: 100px !important;
   height: 20px !important;
-  border: none;
+  border: 0;
   overflow: hidden;
   margin: 2px;
 }
@@ -45,7 +48,7 @@ h2 {
 .jumbotron p a,
 .jumbotron .jumbotron-links a {
   font-weight: 500;
-  color: #fff;
+  color: $color-white;
 
 }
 
@@ -76,22 +79,21 @@ h2 {
 
 .how-to {
   padding: 20px;
-}
 
-.how-to h2 {
-  text-align: center;
-}
+  h2 {
+    text-align: center;
+  }
 
-.how-to li {
-  font-size: 21px;
-  line-height: 1.7;
-  margin-top: 20px;
+  li {
+    font-size: 21px;
+    line-height: 1.7;
+    margin-top: 20px;
 
-}
-
-.how-to li p {
-  font-size: 16px;
-  color: #555;
+    p {
+      font-size: 16px;
+      color: $color-grey;
+    }
+  }
 }
 
 .how-to code {
@@ -113,32 +115,32 @@ footer {
                   endColorstr='#ff720e9e',
                   GradientType=1
   );
-}
 
-footer a {
-  color: #fff;
-}
+  a {
+    color: $color-white;
 
-footer a:hover {
-  color: #fff;
+    &:hover {
+      color: $color-white;
+    }
+  }
 }
 
 .links {
-  margin: 0;
   list-style: none;
+  margin: 0;
   padding-left: 0;
-}
 
-.links li {
-  display: inline;
-  padding: 0 10px;
+  li {
+    display: inline;
+    padding: 0 10px;
+  }
 }
 
 .social-class .social-hex {
+  float: right;
   font-family: Monaco, Menlo, Consolas, 'Courier New', monospace;
   font-size: 10px;
-  opacity: 0.3;
-  float: right;
+  opacity: .3;
 }
 
 .social-class li {
